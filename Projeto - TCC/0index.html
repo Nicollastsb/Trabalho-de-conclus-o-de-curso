@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shirk-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Meu mapa</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/map.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<!-- Barra de navegação -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <ul class="navbar-nav text ml-auto custom-center">
+        <li class="nav-item">
+            <button type="button" onclick="window.location.href='0index.html'" class="btn btn-light" disabled>Ataques de tubarão pelo mundo</button>
+        </li>
+        <li class="nav-item">
+            <button type="button" onclick="window.location.href='1time.html'" class="btn btn-dark">EUA x Austrália</button>
+        </li>
+        <li class="nav-item">
+            <button type="button" onclick="window.location.href='2atividade.html'" class="btn btn-dark">Atividades durante o ataque</button>
+        </li>
+        <li class="nav-item">
+            <button type="button" onclick="window.location.href='3map.html'" class="btn btn-dark">Mapa de ataque</button>
+        </li>
+    </ul>
+</nav>
+<!-- Fim barra de navegação-->
+
+    <h1 class="text-center conteudo font-weight-bold">
+        Ataques de tubarão
+    </h1>
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-2">
+            </div>
+            <div class="col-md-auto">
+                <h5 class="text-justify">
+                    Os tubarões são conhecidos por sua força e voracidade, por isso se encontram entre os animais mais temidos do planeta. Por mais que a chance de sofrer 
+                    um ataque seja relativamente baixa, o medo pelo predador persiste. Devido aos elevados índices de ataques de tubarões, algumas praias chamam a atenção de 
+                    maneira negativa, afastando assim os turistas, que evitam entrar nestas águas e preferem uma caminhada tranquila pela areia.
+                </h5>
+                <h5>
+                    A principal ONG do mundo que registra ataques de tubarões, a "International Shark Attack File (ISAF)" listou algumas praias, buscando alertar os
+                    banhistas por seu perigo: New Smyrna Beach, Flórida (EUA); Coffin Bay, Austrália; Fish Hoek Beach, África do Sul; Boa Viagem, Recife, Brasil;
+                    Second Beach, África do Sul; 
+                </h5>
+            </div>
+            <div class="col col-lg-2">
+            </div>
+        </div>
+    </div>
+
+    <br/>
+<!--
+    <div class="container">
+        <div class="row">
+            
+            <div class="col">
+
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="assets/img/New Smyrna Beach.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">New Smyrna Beach</h5>
+                        <p class="card-text text-truncate">A pequena cidade americana de New Smyrna Beach possui cerca de 22 mil habitantes e tem uma das praias mais perigosas do mundo... </p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#Modal1">Leia mais</a>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">New Smyrna Beach, Flórida (EUA) </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            
+                            <figure class="figure">
+                                <img src="assets/img/New Smyrna Beach.jpg" class="tubarao figure-img img-fluid rounded">
+                                <figcaption class="figure-caption">Fonte: <a href="https://www.youtube.com/watch?v=fpLldX9eHvE" target="_blank">Youtube</a></figcaption>
+                            </figure>
+                            <p>
+                            A pequena cidade americana de New Smyrna Beach possui cerca de 22 mil habitantes e tem uma das praias mais perigosas do mundo quando 
+                            o assunto é tubarão. Os tubarões cabeça-chata que infestam as águas de New Smyrna Beach fizeram desta região no nordeste da Flórida o 
+                            local com o maior número de ataques por ano. A cidade que foi eleita como uma das 10 melhores com praia nos Estados Unidos, mas também é 
+                            conhecida como a "capital mundial dos ataques de tubarão". Entre 1996 e 2008, 20% dos ataques no mundo ocorreram nesta região. Contudo, a 
+                            cidade nunca registrou uma morte por ataque. 
+                            </p>
+                            <br/>
+                            <p>
+                            Fonte: <a href="https://www.bonde.com.br/turismo/bonde-viagem/brasil-tem-duas-das-praias-com-mais-ataques-de-tubaroes-no-mundo-289708.html" target="_blank">Bonde</a>
+                            </p>
+
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col">
+
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="assets/img/coffin-bay-national-park.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Coffin Bay, Austrália</h5>
+                        <p class="card-text text-truncate">Ataques de tubarão são frequentes no extenso litoral da Austrália. Apesar de ter praias paradisíacas, a área de Coffin Bay, no sul... </p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#Modal2">Leia mais</a>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Coffin Bay, Austrália</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            
+                            <figure class="figure">
+                                <img src="assets/img/coffin-bay-national-park.jpg" class="tubarao figure-img img-fluid rounded">
+                                <figcaption class="figure-caption">Fonte: <a href="https://www.tripadvisor.co.za/LocationPhotoDirectLink-g255092-d604367-i127958340-Coffin_Bay_National_Park-South_Australia.html" target="_blank">Trip Advisor</a></figcaption>
+                            </figure>
+                            <p>
+                            Ataques de tubarão são frequentes no extenso litoral da Austrália. Apesar de ter praias paradisíacas, a área de Coffin Bay, no sul do país, 
+                            tem altos índices de ataques de tubarões. A cidade de Coffin Bay tem a pior praia da Austrália em relação ao número de ataques. Para piorar, 
+                            ali é encontrado com maior frequência o mais temido de todos eles, o tubarão branco. Ela está localizada ao sul da península de Eyre. O 
+                            último ataque fatal ocorreu em 2011 quando um mergulhador com 30 anos de experiência foi atacado por dois tubarões brancos de uma só vez.
+                            </p>
+                            <br/>
+                            <p>
+                            Fonte: <a href="https://www.bonde.com.br/turismo/bonde-viagem/brasil-tem-duas-das-praias-com-mais-ataques-de-tubaroes-no-mundo-289708.html" target="_blank">Bonde</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col">
+
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="assets/img/filename-img-7689-5-jpg.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Fish Hoek Beach, África do Sul </h5>
+                        <p class="card-text text-truncate">Localizada na famosa Cidade do Cabo, a praia de Fish Hoek Beach tem cerca de 1,5 quilômetro de extensão e é considerada a mais violenta... </p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#Modal3">Leia mais</a>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Fish Hoek Beach, África do Sul </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            
+                            <figure class="figure">
+                                <img src="assets/img/filename-img-7689-5-jpg.jpg" class="tubarao figure-img img-fluid rounded">
+                                <figcaption class="figure-caption">Fonte: <a href="https://www.tripadvisor.com.br/LocationPhotoDirectLink-g312659-d2485002-i42516128-Fish_Hoek_Beach-Cape_Town_Central_Western_Cape.html" target="_blank">Trip Advisor</a></figcaption>
+                            </figure>
+                            <p>
+                            Localizada na famosa Cidade do Cabo, a praia de Fish Hoek Beach tem cerca de 1,5 quilômetro de extensão e é considerada a mais violenta da 
+                            região em número de ataques de tubarões. A dica é fugir da água e ficar em terra firme. As vinícolas são uma opção muito mais bela e segura 
+                            para os turistas. A outra dica é aproveitar para conhecer a famosa estrada "Chapman Peak road". Em 2010, um turista foi atacado e morto por 
+                            um tubarão branco na área rasa da praia.  
+                            </p>
+                            <br/>
+                            <p>
+                            Fonte: <a href="https://www.bonde.com.br/turismo/bonde-viagem/brasil-tem-duas-das-praias-com-mais-ataques-de-tubaroes-no-mundo-289708.html" target="_blank">Bonde</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col">
+
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="assets/img/img_1_44_5906.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Boa Viagem, Recife, Brasil</h5>
+                        <p class="card-text text-truncate"> O litoral do Recife é o ponto que mais sofre com ataques de tubarão em toda a América do Sul. Localizada na cidade de Recife... </p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#Modal4">Leia mais</a>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="Modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Boa Viagem, Recife, Brasil</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            
+                            <figure class="figure">
+                                <img src="assets/img/img_1_44_5906.jpg" class="tubarao figure-img img-fluid rounded">
+                                <figcaption class="figure-caption">Fonte: <a href="https://www.bonde.com.br/turismo/bonde-viagem/brasil-tem-duas-das-praias-com-mais-ataques-de-tubaroes-no-mundo-289708.html" target="_blank">Bonde</a></figcaption>
+                            </figure>
+                            <p>
+                            O litoral do Recife é o ponto que mais sofre com ataques de tubarão em toda a América do Sul. Localizada na cidade de Recife, a praia 
+                            de Boa Viagem registrou nos últimos 21 anos mais de 50 ataques e 20 mortes devido a tubarões. Em Boa Viagem é também o local onde 
+                            ocorreu o último ataque fatal de tubarões no Brasil. A vítima foi a jovem Bruna Giobbi de 18 anos. No local havia diversas placas avisando 
+                            sobre a presença de tubarões. Porém, suas belezas naturais continuam atraindo banhistas. Nos períodos de maré baixa é possível caminhar 
+                            sobre os recifes e conferir de perto a beleza deste mar de água translúcida. As espécies mais encontradas na praia são os tubarões 
+                            Cabeça-chata e Tigre. 
+                            </p>
+                            <br/>
+                            <p>
+                            Fonte: <a href="https://www.bonde.com.br/turismo/bonde-viagem/brasil-tem-duas-das-praias-com-mais-ataques-de-tubaroes-no-mundo-289708.html" target="_blank">Bonde</a>
+                            </p>
+
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col">
+
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="assets/img/Second Beach, África do Sul.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Second Beach, África do Sul </h5>
+                        <p class="card-text text-truncate">A bela praia sul-africana também é conhecida pela brutalidade dos ataques de tubarão. A área tem as piores estatísticas... </p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#Modal5">Leia mais</a>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="Modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Second Beach, África do Sul </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <figure class="figure">
+                                <img src="assets/img/Second Beach, África do Sul.jpg" class="tubarao figure-img img-fluid rounded">
+                                <figcaption class="figure-caption">Fonte: <a href="http://g1.globo.com/mundo/noticia/2012/01/banhista-morre-em-ataque-de-tubarao-na-praia-mais-perigosa-do-mundo.html" target="_blank">G1 Globo</a></figcaption>
+                            </figure>
+                            <p>
+                            A bela praia sul-africana também é conhecida pela brutalidade dos ataques de tubarão. A área tem as piores estatísticas 
+                            com diversos ataques mortais, o mais recente deles registrado em janeiro de 2012. O local se destaca por uma beleza selvagem 
+                            tendo como principal atrativo a junção entre o rio Umzivubu e o Oceano Atlântico. 
+                            </p>
+                            <p>
+                            As praias de Sharm el Sheikh (Egito), Topsail Island (EUA), Lyman Beach (Havaí), Dyer Island (África do Sul) e o litoral da Califórnia 
+                            (EUA) completam o ranking das 10 praias mais perigosas do mundo em relação ao ataque de tubarões.
+                            </p>
+                            <br/>
+                            <p>
+                            Fonte: <a href="https://www.bonde.com.br/turismo/bonde-viagem/brasil-tem-duas-das-praias-com-mais-ataques-de-tubaroes-no-mundo-289708.html" target="_blank">Bonde</a>
+                            </p>
+
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col">
+
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="assets/img/enseada-da-caieira.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Enseada da Caieira, Fernando de Noronha, Brasil </h5>
+                        <p class="card-text text-truncate">Embora não esteja entre as 10 mais perigosas do mundo, a Enseada da Caieira, em Fernando de Noronha, também aparece na lista... </p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Leia mais</a>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Enseada da Caieira, Fernando de Noronha, Brasil  </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            
+                            <figure class="figure">
+                                <img src="assets/img/enseada-da-caieira.jpg" class="tubarao figure-img img-fluid rounded">
+                                <figcaption class="figure-caption">Fonte: <a href="https://www.tripadvisor.com.br/LocationPhotoDirectLink-g616328-d2391500-i173915347-Enseada_da_Caieira-Fernando_de_Noronha_State_of_Pernambuco.html" target="_blank">Trip Advisor</a></figcaption>
+                            </figure>
+                            <p>
+                            Embora não esteja entre as 10 mais perigosas do mundo, a Enseada da Caieira, em Fernando de Noronha, também 
+                            aparece na lista da ONG ISAF como uma das mais registra ataques de tubarões. O arquipélago oferece algumas das 
+                            praias e paisagens mais bonitas do litoral brasileiro, mas entre as belezas naturais escondem-se, também, algumas 
+                            surpresas. Em meio a dunas e piscinas naturais, a Enseada de Caieira é a praia mais perigosa de Noronha para a 
+                            prática de mergulho, com uma grande presença de tubarões. 
+                            </p>
+                            <br/>
+                            <p>
+                            Fonte: <a href="https://www.bonde.com.br/turismo/bonde-viagem/brasil-tem-duas-das-praias-com-mais-ataques-de-tubaroes-no-mundo-289708.html" target="_blank">Bonde</a>
+                            </p>
+
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+-->
+    
+    <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1sjrqmzcGuqX8y87hSztIGiUadZQKou-OwgbvB6e5U0k&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+
+    <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="assets/js/tether.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+
+</body>
+</html>

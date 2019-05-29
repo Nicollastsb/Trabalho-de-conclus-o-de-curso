@@ -1,0 +1,118 @@
+.continent {
+	stroke: black;
+	stroke-width: 0.5;
+}
+
+.bar {
+    fill: #41ab5d;
+}
+
+.bar:hover {
+    transition: .4s ease .25s;
+    fill: #006837;
+}
+
+.bar-chart {
+    display: none;
+}
+
+h1 {
+    padding: 10px;
+}
+
+h1.conteudo {
+    text-decoration: underline;
+}
+
+h1.conteudoMapa {
+    padding: 10px;
+}
+
+h2 {
+    padding: 10px;
+}
+
+h2.conteudo {
+    padding: 0px;
+}
+
+h3 {
+    padding-top: 10px;
+}
+
+p.conteudo {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+h5 {
+    padding-top: 15px;
+}
+
+footer {
+    background-color: #4B515D;
+}
+
+ul.evitarAtaques {
+    list-style-type: circle;
+}
+
+img.tubarao {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width:450px;
+    max-height:200px;
+    height: auto;
+}
+
+body#mapa3 {
+    background-color: rgb(229,245,224);
+    color: black;
+}
+
+li {
+    padding-right: 10px;
+}
+
+li.list-group-item {
+    background-color: #4B515D;
+}
+
+div#itemLista{
+    padding-top: 5.5px;
+}
+
+.custom-center {
+    margin: auto;
+}
+
+.navbar-nav{
+    padding: 5px;
+}
+
+.slider {
+    min-width: 400px;
+}
+
+.irs-min {
+    background-color: white !important;
+}
+
+.irs-max {
+    background-color: white !important;
+}
+
+.navbar {
+    background-color: #4B515D;
+}
+
+.irs-grid-text {
+    color: white !important;
+}
+
+#euaVsAustralia {
+    margin: auto;
+    display: block;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shirk-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Meu mapa</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/map.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+
+<!-- Barra de navegação -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <ul class="navbar-nav text ml-auto custom-center">
+        <li class="nav-item">
+            <button type="button" onclick="window.location.href='0index.html'" class="btn btn-dark">Ataques de tubarão pelo mundo</button>
+        </li>
+        <li class="nav-item">
+            <button type="button" onclick="window.location.href='1time.html'" class="btn btn-light" disabled>EUA x Austrália</button>
+        </li>
+        <li class="nav-item">
+            <button type="button" onclick="window.location.href='2atividade.html'" class="btn btn-dark">Atividades durante o ataque</button>
+        </li>
+        <li class="nav-item">
+            <button type="button" onclick="window.location.href='3map.html'" class="btn btn-dark">Mapa de ataque</button>
+        </li>
+    </ul>
+</nav>
+
+    <h1 class="conteudo text-center font-weight-bold">
+        Ataques Fatais nos EUA e Austrália
+    </h1>
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-2">
+            </div>
+            <div class="col-md-auto">
+                <h5 class="text-justify">
+                    O país com maior quantidade de ataques registrados são os Estados Unidos, 
+                    com 1950 equivalente a 38% de todos os ataques. Acompanhado pela Austrália com 22% e África do Sul com 10% do total.
+                </h5>
+                <h5 class="text-justify">
+                    Apesar de os EUA ter a maior quantidade de ataques já registrados, 
+                    é a Austrália que tem o maior número de fatalidades por ataques de tubarão.
+                    É possível notar pelo gráfico abaixo que nos EUA em comparação com a Austrália o único tipo de ataque que tem maior 
+                    número de vítimas é em pessoas que estavam mergulhando. Dentre os ataques catalogados a Austrália tem um índice que 
+                    assusta, 23.38% de todas as ocorrências acaba sendo fatal, que é incrívelmente superior ao americano que é de 9.54%.
+                </h5>
+            </div>
+            <div class="col col-lg-2">
+            </div>
+        </div>
+    </div>
+
+    <div id="barC" class ="bar-chart">
+        <svg id="euaVsAustralia" width="1200" height="450"></svg>
+    </div>
+    <div class="container">
+        <p class="conteudo"><b>*Passe o mouse sobre as barras para mais informações.</b></p>
+    </div>
+
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script>
+        $( document ).ready(function() {
+            graficoBarraeuaVsAustralia();
+        });
+    </script>
+    <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="assets/js/euaVsAustralia.js"></script>
+    <script src="assets/js/tether.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+
+</body>
+</html>

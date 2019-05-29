@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shirk-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Meu mapa</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/map.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css"/>
+</head>
+
+<body id="mapa3">
+
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <ul class="navbar-nav text ml-auto custom-center">
+            <li class="nav-item">
+                <button type="button" onclick="window.location.href='0index.html'" class="btn btn-dark">Ataques de tubarão pelo mundo</button>
+            </li>
+            <li class="nav-item">
+                <button type="button" onclick="window.location.href='1time.html'" class="btn btn-dark">EUA x Austrália</button>
+            </li>
+            <li class="nav-item">
+                <button type="button" onclick="window.location.href='2atividade.html'" class="btn btn-dark">Atividades durante o ataque</button>
+            </li>
+            <li class="nav-item">
+                <button type="button" onclick="window.location.href='3map.html'" class="btn btn-light" disabled>Mapa de ataque</button>
+            </li>
+        </ul>
+    </nav>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Mapa de ataques</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+         <p>
+            *Para obter uma nova visualização selecione as opções desejadas em Atividade, Fatalidade, escolha 
+            o intervalo de tempo desejado e pressione "Nova Visualização".
+         </p>
+         <p>
+            *Passe o mouse sobre os países para obter mais informações.
+         </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="conteudo text-center font-weight-bold">
+      Mapa de ataques
+  </h1>
+
+    <!-- Mapa -->
+  <div id="mapa" class="mapa">
+      <div id="container" class="svg-container"></div>
+  </div>
+
+  <!-- Footer -->
+<footer class="page-footer font-small fixed-bottom">
+  <div id="footerList">
+    <ul class="list-group list-group-horizontal justify-content-center">
+        <li class="list-group-item">
+          <div class="input-group mb-1">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="atividadeSelecionada">Atividade:</label>
+            </div>
+            <select class="custom-select" id="atividadeSelecionada">
+              <option value="Swimming">Nadando</option>
+              <option value="Fishing">Pescando</option>
+              <option value="Diving">Mergulhando</option>
+              <option value="Surfing">Surfando</option>
+              <option value="Wading">Caminhando na água</option>
+              <option value="Bathing">Tomando Banho</option>
+              <option value="Other">Outro</option>
+              <option selected value="Allatv">Todos</option>
+            </select>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="input-group mb-1">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="fatalidadeSelecionada">Fatalidade:</label>
+            </div>
+            <select class="custom-select" id="fatalidadeSelecionada">
+              <option value="Y">Sim</option>
+              <option value="N">Não</option>
+              <option selected value="FatalAll">Todos</option>
+            </select>
+          </div>
+        </li>
+        <li class="list-group-item font-weight-bold text-white">
+            <div id="itemLista">Tempo:</div>
+        </li>
+        <li class="list-group-item">
+          <div class="slider">
+            <input type="text" class="js-range-slider" name="my_range" value="" />
+          </div>  
+        </li>
+        <li class="list-group-item">
+          <div class="col-auto">
+            <button onclick="verificaFatalidadeSelecionada();verificaAtividadeSelecionada();desenharMapa();" id="btn1" type="submit" 
+            class="btn btn-light mb-2 font-weight-bold">Nova </br>Visualização</button>
+          </div>
+        </li>
+      </ul> 
+    </div>
+  </footer>
+  <!-- Footer -->
+
+</body>
+<script src="assets/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="assets/js/3map.js"></script>
+    <script src="assets/js/tether.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+</html>

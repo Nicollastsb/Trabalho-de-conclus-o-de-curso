@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shirk-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Meu mapa</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/map.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+
+<!-- Barra de navegação -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    
+        <ul class="navbar-nav text ml-auto custom-center">
+            <li class="nav-item">
+                <button type="button" onclick="window.location.href='0index.html'" class="btn btn-dark">Ataques de tubarão pelo mundo</button>
+            </li>
+            <li class="nav-item">
+                <button type="button" onclick="window.location.href='1time.html'" class="btn btn-dark">EUA x Austrália</button>
+            </li>
+            <li class="nav-item">
+                <button type="button" onclick="window.location.href='2atividade.html'" class="btn btn-light" disabled>Atividades durante o ataque</button>
+            </li>
+            <li class="nav-item">
+                <button type="button" onclick="window.location.href='3map.html'" class="btn btn-dark">Mapa de ataque</button>
+            </li>
+        </ul>
+
+</nav>
+
+<h1 class="conteudo text-center font-weight-bold">
+    Atividades durante o ataque
+</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h5 class="conteudo text-justify">
+                As atividades que as vítimas realizavam durante os ataques com maior frequência foram: surfar, pescar e nadar que, se somadas, superam 57% dos casos.
+            </h5>
+            <h5 class="conteudo text-justify">
+                Uma matéria do <a href="https://alunosonline.uol.com.br/biologia/ataques-tubarao.html" target="_blank">portal Uol</a> trás algumas justificativas:
+                 "Os ataques normalmente ocorrem porque os tubarões confundem a vítima com suas presas habituais, principalmente em áreas que 
+                as águas são turvas. Os acidentes podem ocorrer ainda em decorrência da necessidade do tubarão de proteger seu território, uma atitude comum em várias 
+                espécies.". 
+            </h5>
+            <br/>
+            <figure class="figure">
+                <img src="assets/img/tubarao.jpeg   " class="tubarao figure-img img-fluid rounded">
+                <figcaption class="figure-caption text-center">Fonte: <a href="https://super.abril.com.br/mundo-estranho/como-se-defender-de-um-tubarao/" target="_blank">Super Interessante</a></figcaption>
+            </figure>
+        </div>
+        <!-- Gráfico de barras -->
+        <div id="barC" class="bar-chart col">
+            <svg width="500" height="600"></svg>
+            <p class="text-center">*Passe o mouse sobre as barras para mais informações.</p>
+        </div>
+    </div>
+</div>
+
+
+<script src="assets/js/jquery-3.3.1.js"></script>
+<script>
+    $( document ).ready(function() {
+        graficoBarraAtividade();
+    });
+</script>
+<script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+<script src="assets/js/2atividade.js"></script>
+<script src="assets/js/tether.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+
+</body>
+</html>
